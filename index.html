@@ -1,0 +1,249 @@
+cssport <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body{
+       font-family: Arial, Helvetica, sans-serif;
+       background-color: #f1ffdc;
+       color:#333;
+       margin:0;
+       padding:0;
+    }
+    /* Photo and Contact Section */
+#photo-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.photo {
+  flex: 0 0 200px; /* Fixed size for the photo */
+  margin-right: 20px; /* Adjust spacing between photo and contact info */
+}
+
+.photo img {
+  width: 100%; /* Ensure the photo fills its container */
+  height: auto;
+  border-radius: 50%; 
+  margin-right: 50px;/* Assuming you want a circular photo */
+}
+
+.contact-info {
+  /* flex: 1; */
+  margin-left:150px;
+}
+
+.contact-info h4 {
+  color: #008080;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+    h1{
+        text-align: center;
+        /* color:#008080;
+        color:#008080;*/
+        color:#003366;  /royal blue/
+
+    }
+    h3{
+        text-align: initial;
+        color:#008080;
+        /* color:#003366; royal blue */
+        /* text-decoration-color: rgb(130, 196, 196); */
+    }
+    /* *{
+        background-color: rgb(164, 252, 255);
+    } */
+    section{
+      /* border-top: 1px solid #ccc;
+       */
+       border-top: 3px solid #a3a3a8;
+      padding:20px;
+      background-color: #f1ffdc;
+       /* background-color: #b39191; light grey  */
+
+      margin-bottom: 10px;
+      border-radius:10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    section:hover{
+      background-color: #dfe2e2;
+    }
+    nav{
+      background-color: #008080;
+      /* background-color: #003366; royal blue */
+      padding:10px;
+      margin-bottom: 10px;
+      border-bottom: #f1ffdc;
+      text-align: center;
+    }
+    nav a{
+        color:#fff;
+        text-decoration: none;
+        padding:10px 20px 10px 10px;
+    }
+    nav a:hover{
+        /* background-color: #005a5a; */
+        /* background-color: #4b0082; */
+        background-color: #67b7c2; 
+    }
+    footer{
+      text-align: center;
+      background-color: #008080;
+      /* background-color: #003366; royal blue */
+      color:#fff;
+      padding: 10px;
+      position:relative;
+      bottom:0;
+      left:0;
+      width:100%;
+    }
+    /* divider{
+      border-top: 1px solid #ccc;
+      margin:20px 0;
+    } */
+    /* #home{
+        background-color: rgb(67, 175, 148);
+
+    } */
+  </style>
+</head>
+<body>
+    <h1>PORTFOLIO</h1>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <a href="#home">   Home   </a>&nbsp;
+      <a href="#about">  About Me  </a>&nbsp;
+      <a href="#academics">  Academics </a>&nbsp;
+      <a href="#skills">  Skills  </a>&nbsp;
+        <a href="#projects">   Projects   </a>&nbsp;
+        <a href="#achievements">   Achievements   </a>&nbsp;
+        <a href="#contact me">  Contact Me  </a>&nbsp;
+        <a href="#blog">  Blog  </a>&nbsp;
+    
+      <!-- <li><a href="#about">About Us</a></li>
+      <li><a href="#skills">Academic Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#blog">Blog</a></li> -->
+    </ul>
+  </nav>
+  <section id="photo-contact">
+    <div class="photo">
+      <img src="image.png" alt="Your Photo">
+    </div>
+    <div class="contact-info">
+      <h3>Contact Information</h3>
+      <p>Email: <a href="/email">manasa@gmail.com</a></p>
+      <p>Phone: <a href="/phone">1234567899</a></p>
+    </div>
+  </section>
+ 
+  <!-- Home Section -->
+  <section id="home">
+    <h3>Welcome to My Portfolio</h3>
+    <p>This is the homepage of my portfolio website. Here, you can find information about my skills, projects, achievements, and more.</p>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about">
+    <h3>About Me</h3>
+    <p>Currently pursuing btech in KMIT .I am dedicated to expand my knowledge and skills in the ever evolving world of software.</p>
+  </section>
+
+  <!-- Academic Skills Section -->
+  <section id="Academics">
+    <h3>Qualifications</h3>
+          <div class="box">
+            <table border="4px solid black">
+              <!-- <caption>
+                Qualifications
+              </caption> -->
+              <thead>
+                <tr>
+                  <th rowspan="2">Qualification</th>
+                  <th rowspan="2">Institution</th>
+                  <!-- <th rowspan="2">Board/University</th> -->
+                  <th rowspan="2">Year of Completion</th>
+                  <th rowspan="2">CGPA/percentage</th>
+                </tr>
+                <tr></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Btech in CSE</td>
+                  <td>Keshav Memorial Institute of Technology(KMIT)</td>
+                  <!-- <td>Jawaharlal Nehru Technological University(JNTU)</td> -->
+                  <td>2025</td>
+                  <td>8.5</td>
+                </tr>
+                <tr>
+                  <td>diploma</td>
+                  <td>Govt.polytechnic for Women</td>
+                  <!-- <td>State Board Of Intermediate Education</td> -->
+                  <td>2021</td>
+                  <td>9.6</td>
+                </tr>
+                <tr>
+                  <td>X</td>
+                  <td>Bhashyam high school </td>
+                  <!-- <td>State Board of Secondary Education</td> -->
+                  <td>2019</td>
+                  <td>9.7</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+    <section id="skills">
+    <h3>Skills</h3>
+    <ul>
+      <li>Programming Languages: HTML, CSS, JavaScript, etc.</li>
+      <li>Database Management: MySQL, MongoDB, etc.</li>
+      <li>Frameworks: Bootstrap, jQuery, etc.</li>
+      <li>Version Control: Git, GitHub, etc.</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h3>Projects</h3>
+    <p>project A</p>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements">
+    <h3>Achievements</h3>
+    <h4>Technical Achievements</h4>
+    <ul>
+      <li>Secured an internship at teachnook</li>
+    </ul>
+    <h4>Non-Technical Achievements</h4>
+    <ul>
+      <li>Recieved awards for excellence in Coomunication and teamwork</li>
+      <li>Volunteered for a Social Cause</li>
+    </ul>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog">
+    <h3>Blog</h3>
+    <p>Check out my latest blog posts where i share insights tips and ideas. </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
